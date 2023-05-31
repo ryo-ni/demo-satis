@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>試験結果</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+	<div id="content-wrap">
+		<div id="content-result">
+			<h1>試験確認</h1>
+			<h2>回線試験結果：<span th:text="${testResult.result}"></span>
+			</h2>
+			<h3>▼回線試験情報</h3>
+			<ul>
+				<li>リクエスト番号：<span th:text="${testResult.ticketNumber}"></span>
+				</li>
+				<li>対象機器：デバイス<span th:text="${testResult.faultDevice}"></span>
+				</li>
+				<li>契約タイプ：<span th:text="${testResult.contractType}"></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>

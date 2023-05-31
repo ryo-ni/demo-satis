@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>試験確認</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<div id="content-wrap">
+		<div id="content-confirm">
+			<h1>試験結果</h1>
+			<a th:href="@{/result/{ticket_number}(ticket_number=${ticketNumber})}">試験結果を確認する</a>
+		</div>
+	</div>
+</body>
+</html>

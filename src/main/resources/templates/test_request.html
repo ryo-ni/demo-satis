@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>試験依頼</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+	<div id="content-wrap">
+		<form th:action="@{/confirm}" method="post">
+			<h1>試験依頼</h1>
+			<ul id="request-ul">
+				<li>
+
+					<label>対象機器を入力してください</label>
+				</li>
+				<li>
+					<input type="text" name="faultDevice" class="test-input">
+				</li>
+				<li>
+					<label>契約タイプを選択してください</label>
+				</li>
+				<li>
+					<input type="text" name="contractType"  class="test-input">
+				</li>
+			</ul>
+			<div id="btn-area">
+				<button type="submit">送信</button>
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>
